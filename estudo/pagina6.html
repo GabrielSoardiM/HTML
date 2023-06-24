@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Estudos 6</title>
+
+    <link rel="shortcut icon" href="img/lampada_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/estilo_principal.css">
+
+    <style>
+        #estudo{
+            background-color: goldenrod;
+            width: 50px;
+            height: 50px;
+        }
+
+        #estudo:hover{
+            background-color: maroon;
+            border-radius: 100%;
+        }
+
+        ul{
+            background-color: transparent;
+            text-align: center;
+        }
+
+        ul a:visited{
+            color: maroon;
+        }
+
+        ul a:hover{
+            color: maroon;
+            text-shadow: 1px 1px 3px #ffb700;
+        }
+
+        ul a::after{
+            content: '  [LINK]';
+            color: rgb(104, 96, 96);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>PSEUDO-CLASSES</h1>
+
+    <p>Caracterizadas por :</p>
+
+    <div id="estudo"></div>
+
+    <hr>
+
+    <h1>PSEUDO-ELEMENTOS</h1>
+
+    <ul type="none">
+        <li><a href="https://github.com/" target="_blank" rel="external">GITHUB</a></li>
+        <li><a href="https://www.youtube.com/watch?v=UuVEm9jZ7YI&list=RDMM&start_radio=1&rv=UuVEm9jZ7YI&t=3&ab_channel=BAILEDOSVIGARISTA" target="_blank" rel="external">MUSICA YOUTUBE</a></li>
+        <li><a href="https://www.facebook.com/marketplace/106430689391244/vehicles" target="_blank" rel="external">FACEBRIQUE</a></li>
+    </ul>
+    
+    <p>Pseudo elementos é caracterizado por ::</p>
+
+    <hr>
+
+    <h1>Inline-Level</h1>
+
+    <p>Box-level</p>
+    <p>Inline-Level</p>
+
+    <hr>
+
+    <footer>
+        <div class="botoes">
+            <p><a href="pagina5.html" rel="prev" target="_self">&lt;&lt; Pagina Anterior</a></p>
+        </div>
+
+        <div class="botoes">
+            <p><a href="pagina7.html" rel="next" target="_self">Próxima página &gt;&gt;</a></p>
+        </div>
+    </footer>
+</body>
+</html>

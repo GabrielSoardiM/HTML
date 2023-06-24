@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Estudos 2</title>
+    <link rel="shortcut icon" href="img/lampada_icon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>LINK DOWNLOAD</h1>
+
+    <ol>
+        <li><a href="img/css3-logo-200.png" target="_blank" download="css3-logo-200.png" type="image/png">Baixar imagem CSS</a></li>
+
+        <li><a href="html_logo_200.png" target="_blank" download="html_logo_200.png" type="image/png">Baixar imagem HTML</a></li>
+    </ol>
+
+    <hr>
+
+    <h1>IMAGENS DINAMICAS</h1>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/imagem_p.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="img/imagem_m.png" type="image/png">
+
+        <img src="img/imagem_g.png" alt="Imagem Grande">
+    </picture>
+
+    <hr>
+
+    <h1>AUDIO E VIDEO</h1>
+
+    <a href="pagina_audio.html">
+        <p>Vem pro melhor da internet !</p>
+    </a>
+
+    <!--
+
+    <audio preload="metadata" controls autoplay loop>
+        <source src="audio/Immortal - NEFFEX.mp3" type="audio\mpeg">
+    </audio>
+
+    -->
+
+    <hr>
+
+    <h1 style="color:blue;">CSS INLINE</h1>
+
+    <h2 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Capitulo 1</h2>
+
+    <p style="text-align:justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corrupti ratione ea distinctio tenetur consectetur blanditiis, quia doloremque enim odit repudiandae sapiente, aut quis amet, eaque repellendus reprehenderit ipsum nesciunt.</p>
+
+    <hr>
+
+    <style>
+        .interno{
+            color: blue;
+        }
+    </style>
+
+    <h1 class="interno">CSS INTERNO/LOCAL</h1>
+
+    <p>Esse tipo de estilo é quando coloco a tag style no head !</p>
+
+    <hr>
+
+    <p><a href="index.html" rel="prev" target="_self">&lt;&lt; Pagina Anterior</a></p>
+
+    <p><a href="pagina3.html" rel="next" target="_self">Próxima Página &gt;&gt;</a></p>
+
+</body>
+</html>
