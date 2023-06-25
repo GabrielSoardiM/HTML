@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Estudos 8</title>
+
+    <link rel="shortcut icon" href="img/lampada_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/estilo_principal.css">
+
+    <style>
+        body{
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+
+        div.quadrado{
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            background-color: lightgray;
+        }
+
+        div#q1{
+            background-color: aquamarine;
+        }
+
+        div#q2{
+            background-image: linear-gradient(to bottom, yellow, orange);
+        }
+        
+        div#q3{
+            background-image: url(imagens/pattern001.png);
+        }
+
+        div.bloco{
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            height: 200px;
+            background-image: url(imagens/wallpaper003.jpg);
+        }
+
+        div#b1{
+            background-position: left top;
+        }
+
+        div#b2{
+            background-position: left center
+        }
+        
+        div#b3{
+            background-position: right bottom
+        }
+        
+        div#b4{
+            background-position: center center
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Estudos sobre plano de fundo</h1>
+    </header>
+
+    <main>
+        <div class="quadrado" id="q1"></div>
+        <div class="quadrado" id="q2"></div>
+        <div class="quadrado" id="q3"></div>
+
+        <h2>Background-repeat: maneira a qual as imagens são repetidas ou nao são repetidas</h2>
+
+        <hr>
+
+        <div class="bloco" id="b1"></div>
+        <div class="bloco" id="b2"></div>
+        <div class="bloco" id="b3"></div>
+        <div class="bloco" id="b4"></div>
+    </main>
+
+    <footer>
+        <div class="botoes">
+            <p><a href="pagina7.html" rel="prev" target="_self">Pagina Anterior</a></p>
+        </div>
+
+        <div class="botoes">
+            <p><a href="pagina9.html" rel="next" target="_self">Próxima página</a></p>
+        </div>
+
+        <p style="color:black; text-decoration:underline; text-align: center;">Desenvolvido por Gabriel Soardi - Soldado do Exército</p>
+    </footer>
+</body>
+</html>
