@@ -5,6 +5,10 @@
 *{
     --selecionaTodosElementos: white;
 }
+body{
+    height: 96vh;
+    margin: 0;
+}
 
 h1{
     color: #800000;
@@ -50,7 +54,14 @@ li a, a{
 
 footer{
     margin: auto;
-    width: fit-content;
+    width: 100vw;
+    position: absolute;
+    top: 100vh;
+    transform: translate(0%, -100%);
+    text-align: center;
+    background-color: black;
+    padding: 10px 0px 10px 0px;
+    color: #daa520;
 }
 
 .botoes{
