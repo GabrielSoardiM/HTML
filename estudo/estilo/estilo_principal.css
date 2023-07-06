@@ -53,11 +53,10 @@ li a, a{
 }
 
 footer{
-    margin: auto;
-    width: 100vw;
-    position: absolute;
-    top: 100vh;
-    transform: translate(0%, -100%);
+    margin: 0;
+    width: 94vw;
+    position: relative;
+    bottom: 0;
     text-align: center;
     background-color: black;
     padding: 10px 0px 10px 0px;
