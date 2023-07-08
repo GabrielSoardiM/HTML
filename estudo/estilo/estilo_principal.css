@@ -54,7 +54,8 @@ li a, a{
 
 footer{
     margin: 0;
-    width: 94vw;
+    margin-top: 20px;
+    width: 100%;
     position: relative;
     bottom: 0;
     text-align: center;

@@ -14,17 +14,49 @@
             margin: 20px;
         }
 
-        table{
+        .tabela-um{
             width: 500px;
             height: 500px;
+            margin-top: 20px;
             border-collapse: collapse;
         }
 
-        td{
+        .tabela-um td{
             border: 1px solid black;
             padding: 10px;
             text-align: center; /*alinhamento horizontal*/
             vertical-align: top;
+        }
+
+        .tabela-dois{
+            width: 500px;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+
+        .tabela-dois td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .tabela-dois thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        .tabela-dois td{
+            text-align: center;
+        }
+
+        .tabela-dois tr:nth-child(2n){
+            /* even odd 2n ou 2n-1*/
+            background-color: lightgray;
+        }
+
+        .tabela-dois tr th{
+            position: sticky;
+            top: 0;
+            background-color: gray;
         }
     </style>
 </head>
@@ -33,25 +65,68 @@
         <h1>Tabelas</h1>
     </header>
     <main>
-        <table>
+        <table class="tabela-dois">
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>46.000</td>
+                </tr>
+
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>22.000</td>
+                </tr>
+
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>18.000</td>
+                </tr>
+
+                <tr>
+                    <td>Bahia</td>
+                    <td>15.000</td>
+                </tr>
+
+                <tr>
+                    <td>Paraná</td>
+                    <td>12.000</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de Habitantes</td>
+                    <td><strong>11 2.000</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <hr>
+
+        <table class="tabela-um">
             <tr>
-                <td>A1</td>
-                <td>B1</td>
-                <td>C1</td>
+                <td rowspan="3">A1</td>
+                <td colspan="2">B1</td>
             </tr>
             <tr class="linha">
-                <td>A2</td>
                 <td>B2</td>
                 <td>C2</td>
             </tr>
             <tr>
-                <td>A3</td>
                 <td>B3</td>
                 <td>C3</td>
             </tr>
         </table>
 
         <p>table <br>
+            caption <br>
             thead <br>
                 tr, td, th <br>
             tbody <br>
@@ -62,7 +137,7 @@
         </p>
     </main>
     <footer>
-        <a href="pagina10.html" target="_self">Página Anterior</a> -- <a href="pagina12.html" target="_self">Proxima Página</a>
+        <a href="pagina11.html" target="_self">Página Anterior</a> -- <a href="pagina13.html" target="_self">Proxima Página</a>
     </footer>
 </body>
 </html>
