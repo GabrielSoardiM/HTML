@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos 15</title>
+
+    <link rel="shortcut icon" href="img/lampada_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/estilo_principal.css">
+
+    <style>
+        iframe{
+            border: 2px solid black;
+            width: 99vw;
+            height: 400px;
+            margin: 0 auto;
+        }
+
+        p{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Navegação em Iframes</h1>
+    </header>
+    <main>
+        <ul>
+            <li><a href="index.html" target="exibicao">Página 01</a></li>
+            <li><a href="pagina5.html" target="exibicao">Página 05</a></li>
+            <li><a href="pagina10.html" target="exibicao">Página 10</a></li>
+        </ul>
+
+        <hr>
+
+        <iframe src="" frameborder="0" name="exibicao" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+
+        <hr>
+
+        <p>sandbox = "sandbox" -> para segurança de formularios etc...</p>
+        <p>referrerpolicy = "no-referrer" -> para não informar dados para propagandas...</p>
+    </main>
+    <footer>
+        <a href="pagina14.html" target="_self">Página Anterior</a> -- <a href="pagina16.html" target="_self">Proxima Página</a>
+    </footer>
+</body>
+</html>
