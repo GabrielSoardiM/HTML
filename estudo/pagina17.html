@@ -10,7 +10,89 @@
 </head>
 <body>
     <header></header>
-    <main></main>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Esportes Favoritos</legend>
+
+                <input type="checkbox" name="fut" id="ifut">
+                <label for="ifut">Futebol</label>
+                <br>
+                <input type="checkbox" name="base" id="ibase">
+                <label for="ibase">Basebol</label>
+                <br>
+                <input type="checkbox" name="basq" id="ibasq"> 
+                <label for="ibasq">Basquete</label>
+                <br>
+                <input type="checkbox" name="volei" id="ivolei">
+                <label for="ivolei">Volei</label>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sexo</legend>
+
+                <input type="radio" name="sexo" id="isxfem">
+                <label for="isxfem">Feminino</label>
+                <br>
+                <input type="radio" name="sexo" id="isxmas">
+                <label for="isxmas">Masculino</label>
+
+                <p>Prestar atencao no name dos radio.</p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Outros Controladores</legend>
+
+                <label for="icor">Cor</label>
+                <input type="color" name="Cor" id="icor">
+                
+                <br>
+
+                <label for="inivel">Nivel</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="5" value="1">
+
+                <br>
+
+                <label for="iarq">Arquivo</label>
+                <input type="file" name="arq" id="iarq">
+            </fieldset>
+            <fieldset>
+                <legend>Outros Controladores 2</legend>
+
+                <label for="iselec">Selecione</label>
+                <select name="selec" id="iselec">
+                    <optgroup label="Região Sudeste">
+                        <option value="RJ">Rio De Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+
+                    <optgroup label="Região Sul">
+                        <option value="RS" selected>Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                </select>
+                
+                <br>
+
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+
+                <datalist id="lstprof">
+                    <option>Administrador</option>
+                    <option>Agropecuário</option>
+                    <option>Téc. Alimentos</option>
+                    <option>Téc. Informática</option>
+                </datalist>
+                
+                <br>
+                
+                <label for="imsg">Mensagem:</label>
+                <br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </fieldset>
+        </form>
+    </main>
     <footer>
         <a href="pagina16.html" target="_self">Página Anterior</a> -- <a href="pagina18.html" target="_self">Proxima Página</a>
     </footer>
