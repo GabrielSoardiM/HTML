@@ -50,7 +50,8 @@
                 <br>
 
                 <label for="inivel">Nivel</label>
-                <input type="range" name="nivel" id="inivel" min="1" max="5" value="1">
+                <input type="range" name="nivel" id="inivel" min="1" max="5" value="1" oninput="val.innerHTML = Number(inivel.value)">
+                <output id="val">0</output>
 
                 <br>
 
@@ -90,6 +91,30 @@
                 <label for="imsg">Mensagem:</label>
                 <br>
                 <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend>Output</legend>
+
+                <label for="inum1">Numero 1:</label>
+                <input type="number" name="num1" id="inum1" min="0" max="50" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+
+                <br>
+
+                <label for="inum2">Numero 2:</label>
+                <input type="number" name="num2" id="inum2" min="0" max="50" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+
+                <br>
+
+                <label for="isoma">Soma:</label>
+                <output name="soma" id="isoma">0</output>
+
+                <br>
+                <br>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Resetar">
             </fieldset>
         </form>
     </main>
