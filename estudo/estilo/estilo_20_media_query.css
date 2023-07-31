@@ -1,0 +1,18 @@
+@media screen and (min-width:768px){
+    span#burguer{
+        display: none;
+    }
+
+    main{
+        width: 768px;
+    }
+
+    menu#itens{
+        display: block;
+        text-align: center;
+    }
+
+    menu#itens li{
+        display: inline-block;
+    }
+}
